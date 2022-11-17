@@ -1,21 +1,13 @@
->> Nombre:	Marc Moran Monfort
->> Grupo:	5M11
->> github: 	https://github.com/marcmmonfort/PrimerMinimoExamen
+Nombre:	Alba Serra Muchart
+Grupo:	5M11
+github: 	https://github.com/albaserra/ExamenMinim1.git
 
->> PARTE I ...
-	>> (1) El package "Entities" contiene las entidades principales: "".
-	>> (2) El subpackage "ValueObjects" contiene los objetos de valor: "".
-	>> (3) La interfaz "ObjetoManager.java" especifica las operaciones necesarias.
-	>> (4) La clase "ObjetoManagerImpl.java" desarrolla estas operaciones necesarias.
-	>> (5) Contenedores ...
-		>> El contenedor de recetas es una lista implementada como un array (ArrayList).
-		>> El contenedor de productos de una receta es una lista encadenada (LinkedList).
-		>> El contenedor de usuarios es un diccionario implementado con un HashMap (Hashmap).
-		>> El contenedor de peticiones es una cola (FIFO)implementada como una lista encadenada (LinkedList).
-	>> (6) ESTADO: Implementación completa de modelos, estructuras de datos y pruebas unitarias.
 
->> PARTE II ...
-	>> (1) Implementación del servicio REST completa [pendiente de ...].
-	>> (2) Funcionamento de las operaciones ...
-		>> Se ha validado el funcionamiento de las operaciones [...] utilizando swagger y INSOMNIA. 
-		>> Queda pendiente la validación de las operaciones [...] utilizando swagger y INSOMNIA.
+1. El package "Entities" contiene las entidades principales: "".
+2. El subpackage "ValueObjects" contiene los objetos de valor: "".
+3. La interfaz "ObjetoManager.java" especifica las operaciones necesarias.
+4. La clase "ObjetoManagerImpl.java" desarrolla estas operaciones necesarias. (Alguna función falla)
+5. API y REST finalizados.
+
+
+
