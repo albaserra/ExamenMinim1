@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.util.List;
 import org.apache.log4j.Logger;
 
-public class ObjetoManagerImplTest {
+/*public class ObjetoManagerImplTest {
 
     final static Logger logger = Logger.getLogger(ObjetoManagerImpl.class);
 
@@ -155,4 +155,4 @@ public class ObjetoManagerImplTest {
 
     // ----------------------------------------------------------------------------------------------------
 
-}
+}*/

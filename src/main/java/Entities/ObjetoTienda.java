@@ -8,7 +8,7 @@ import Services.*;
 import java.util.List;
 import java.util.LinkedList;
 
-public class ObjetoTienda {
+/*public class ObjetoTienda {
     String objectId;
     String objectName;
     String objectDescription;
@@ -54,4 +54,4 @@ public class ObjetoTienda {
     public void setObjectCoins(double objectCoins) {
         this.objectCoins = objectCoins;
     }
-}
+}*/

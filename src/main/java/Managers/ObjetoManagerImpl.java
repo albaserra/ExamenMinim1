@@ -1,4 +1,4 @@
-package Managers;
+/*package Managers;
 
 import Entities.*;
 import Entities.ValueObjects.Credenciales;
@@ -171,4 +171,4 @@ public class ObjetoManagerImpl implements ObjetoManager{
     }
 
     // ----------------------------------------------------------------------------------------------------
-}
+}*/

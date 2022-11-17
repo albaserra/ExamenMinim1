@@ -8,7 +8,7 @@ import Services.*;
 import java.util.List;
 import java.util.LinkedList;
 
-public class Credenciales {
+/*public class Credenciales {
     String email;
     String password;
 
@@ -34,4 +34,4 @@ public class Credenciales {
     public void setPassword(String password) {
         this.password = password;
     }
-}
+}*/

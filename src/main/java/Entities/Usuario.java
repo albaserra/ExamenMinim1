@@ -9,7 +9,7 @@ import Services.*;
 import java.util.List;
 import java.util.LinkedList;
 
-public class Usuario {
+/*public class Usuario {
     String userId;
     String username;
     String userSurname;
@@ -93,4 +93,4 @@ public class Usuario {
     public void addObjetoComprado(ObjetoTienda obj){
         this.objectsBought.add(obj);
     }
-}
+}*/
