@@ -15,11 +15,20 @@ public class CovidManagerImpl implements CovidManager {
     List<Paciente> pacientes;
     List<Informe> informes;
 
-    public CovidManagerImpl(List<Laboratorio> laboratorios, List<Muestra> muestras, List<Paciente> pacientes) {
-        this.laboratorios = new ArrayList<>();
-        this.muestras = new LinkedList<>();
-        this.pacientes = new ArrayList<>();
-        this.informes = new ArrayList<>();
+    public CovidManagerImpl(List<Laboratorio> laboratorios, Queue<Muestra> muestras, List<Paciente> pacientes, List<Informe> informes) {
+        this.laboratorios = laboratorios;
+        this.muestras = muestras;
+        this.pacientes = pacientes;
+        this.informes = informes;
+    }
+
+    private static CovidManager instance;
+
+    final static Logger logger = Logger.getLogger(CovidManagerImpl.class);
+
+    public static CovidManager getInstance(){
+        if (instance==null) instance = new CovidManagerImpl();
+        return instance;
     }
 
     public int numPacientes() {
@@ -56,7 +65,7 @@ public class CovidManagerImpl implements CovidManager {
         logger.info("El laboratorio de destino es el siguiente: " + laboratorioId);
 
         Muestra muestra = this.muestras.poll();
-        muestra.getLaboratorioId() = laboratorioId;
+        this.muestras.add(new Muestra(muestra.getMuestraId(), muestra.getPacienteId(), muestra.getClinicoId(), laboratorioId, muestra.getFecha()));
     }
 
     @Override
@@ -77,15 +86,6 @@ public class CovidManagerImpl implements CovidManager {
         Laboratorio lab = new Laboratorio(laboratorioId, nombre);
         this.laboratorios.add(lab);
         return laboratorios.size();
-    }
-
-    private static CovidManager instance;
-
-    final static Logger logger = Logger.getLogger(CovidManagerImpl.class);
-
-    public static CovidManager getInstance(){
-        if (instance==null) instance = new CovidManagerImpl();
-        return instance;
     }
 }
 
